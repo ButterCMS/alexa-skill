@@ -1,14 +1,22 @@
+const secrets = require('../secrets.json')
+const butter = require('buttercms')(secrets.BUTTER_CMS_API_KEY)
+
 const HelloWorldIntentHandler = {
   canHandle (handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
         handlerInput.requestEnvelope.request.intent.name === 'HelloWorldIntent'
   },
-  handle (handlerInput) {
-    const speechText = 'Hello World!'
+  async handle (handlerInput) {
+    const response = await butter.post.list({ page: 1, page_size: 10 })
+
+    const posts = response.data.data.map(post => {
+      return {
+        title: post.title
+      }
+    })
 
     return handlerInput.responseBuilder
-      .speak(speechText)
-      .withSimpleCard('Hello World', speechText)
+      .speak(posts[0].title)
       .getResponse()
   }
 }

@@ -23,7 +23,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-butterCMS-skill-default",
             "handler": "index.handler",
-            "revisionId": "62d1614e-b501-48e4-b5ad-5beb549d2fd7",
+            "revisionId": "ba62230b-49a2-4de0-b6e7-ae12ac9a7aa2",
             "runtime": "nodejs8.10"
           }
         ]
