@@ -1,0 +1,33 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.9dbe3988-97ff-4eca-95c2-416cf8722011",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "16541a2026dbf65b6e4faeeb5402deeb"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "55eebfb96a8b7fef04d15e6fb9082c49"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:383537978421:function:ask-custom-butterCMS-skill-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-butterCMS-skill-default",
+            "handler": "index.handler",
+            "revisionId": "62d1614e-b501-48e4-b5ad-5beb549d2fd7",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
+    }
+  }
+}
