@@ -3,7 +3,7 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest'
   },
   handle (handlerInput) {
-    const speechText = 'Welcome to the Alexa Skills Kit, you can say hello!'
+    const speechText = 'Welcome the Butter CMS Example Skill. You can ask me to read a list of articles.'
 
     return handlerInput.responseBuilder
       .speak(speechText)

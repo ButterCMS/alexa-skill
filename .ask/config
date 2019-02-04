@@ -10,7 +10,7 @@
         },
         "interactionModel": {
           "en-US": {
-            "eTag": "55eebfb96a8b7fef04d15e6fb9082c49"
+            "eTag": "66fa9ac8db1a646d2425df51a8f848fb"
           }
         },
         "lambda": [
@@ -23,7 +23,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-butterCMS-skill-default",
             "handler": "index.handler",
-            "revisionId": "ba62230b-49a2-4de0-b6e7-ae12ac9a7aa2",
+            "revisionId": "b30cf154-8aca-48a0-a8a4-59ae4d75122e",
             "runtime": "nodejs8.10"
           }
         ]

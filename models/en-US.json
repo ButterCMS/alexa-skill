@@ -8,17 +8,13 @@
           "samples": []
         },
         {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
           "name": "AMAZON.StopIntent",
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "ArticleListIntent",
           "samples": [
-            "hello"
+            "read the article list"
           ]
         }
       ]
