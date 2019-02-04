@@ -7,12 +7,16 @@ const ArticleListIntentHandler = {
         handlerInput.requestEnvelope.request.intent.name === 'ArticleListIntent'
   },
   async handle (handlerInput) {
-    const response = await butter.post.list({ page: 1, page_size: 10 })
+    const response = await butter.post.list({ page: 1, page_size: 5 })
+    const posts = response.data.data
 
-    const posts = response.data.data.map(post => post.title).join('')
+    const message = `<speak>
+      This is the list of the last ${posts.length} posts.
+      ${posts.map(p => `<p>${p.title}</p>`)}
+    </speak>`
 
     return handlerInput.responseBuilder
-      .speak(posts)
+      .speak(message)
       .getResponse()
   }
 }
