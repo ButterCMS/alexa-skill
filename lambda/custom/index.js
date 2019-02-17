@@ -1,7 +1,6 @@
 const Alexa = require('ask-sdk-core')
 const LaunchRequestHandler = require('./handlers/launch')
 const ErrorHandler = require('./handlers/error')
-const SessionEndedRequestHandler = require('./handlers/sessionEnded')
 const ArticleListIntentHandler = require('./handlers/articleList')
 const CancelAndStopIntentHandler = require('./handlers/cancel')
 
@@ -11,8 +10,7 @@ exports.handler = skillBuilder
   .addRequestHandlers(
     LaunchRequestHandler,
     ArticleListIntentHandler,
-    CancelAndStopIntentHandler,
-    SessionEndedRequestHandler
+    CancelAndStopIntentHandler
   )
   .addErrorHandlers(ErrorHandler)
   .lambda()

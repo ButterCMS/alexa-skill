@@ -8,15 +8,18 @@ const ArticleListIntentHandler = {
   },
   async handle (handlerInput) {
     const response = await butter.post.list({ page: 1, page_size: 5 })
-    const posts = response.data.data
+    const titles = response.data.data.map(p => p.title)
 
     const message = `<speak>
-      This is the list of the last ${posts.length} posts.
-      ${posts.map(p => `<p>${p.title}</p>`)}
+      <p>This is the list of the last ${titles.length} posts.</p>
+      ${titles.map(t => `<p>${t}</p>`)}
     </speak>`
 
     return handlerInput.responseBuilder
       .speak(message)
+      .withSimpleCard(
+        'Artcile List',
+        titles.join('\n'))
       .getResponse()
   }
 }

@@ -1,3 +1,5 @@
+const IMAGE_URL = 'https://d2devwt40at1e2.cloudfront.net/api/file/tdt3s1OHRO6wfQOpmAHw'
+
 const LaunchRequestHandler = {
   canHandle (handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest'
@@ -8,7 +10,10 @@ const LaunchRequestHandler = {
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(speechText)
-      .withSimpleCard('Hello World', speechText)
+      .withStandardCard(
+        'Butter CMS Alexa Skill',
+        speechText,
+        IMAGE_URL)
       .getResponse()
   }
 }

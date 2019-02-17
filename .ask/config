@@ -6,7 +6,7 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "16541a2026dbf65b6e4faeeb5402deeb"
+          "eTag": "08da8758120bf5491cf372ecd3bc8b38"
         },
         "interactionModel": {
           "en-US": {
@@ -23,7 +23,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-butterCMS-skill-default",
             "handler": "index.handler",
-            "revisionId": "8736cd7f-0b23-47c9-acdd-aab2ad66a89f",
+            "revisionId": "a62a3390-8d2c-49fa-a8ae-233f564511cb",
             "runtime": "nodejs8.10"
           }
         ]

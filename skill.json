@@ -3,14 +3,12 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Sample Short Description",
+          "summary": "ButterCMS Example Skill",
           "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
+            "Alexa open butterCMS-skill"
           ],
           "name": "butterCMS-skill",
-          "description": "Sample Full Description"
+          "description": "ButterCMS Example Skill"
         }
       },
       "isAvailableWorldwide": true,
