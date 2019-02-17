@@ -16,6 +16,24 @@
           "samples": [
             "read the article list"
           ]
+        },
+        {
+          "name": "PodcastIntent",
+          "samples": [
+            "I want to listen the podcast"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
         }
       ]
     }

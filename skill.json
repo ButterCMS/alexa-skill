@@ -21,7 +21,12 @@
         "endpoint": {
           "sourceDir": "lambda/custom",
           "uri": "ask-custom-butterCMS-skill-default"
-        }
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ]
       }
     },
     "manifestVersion": "1.0"

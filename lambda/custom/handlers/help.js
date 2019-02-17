@@ -2,10 +2,11 @@ const IMAGE_URL = 'https://d2devwt40at1e2.cloudfront.net/api/file/tdt3s1OHRO6wfQ
 
 const LaunchRequestHandler = {
   canHandle (handlerInput) {
-    return handlerInput.requestEnvelope.request.type === 'LaunchRequest'
+    return handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
+        handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent'
   },
   handle (handlerInput) {
-    const speechText = 'Welcome the Butter CMS Example Skill. You can ask me to read a list of articles or you can listen to the podcast.'
+    const speechText = 'This is the help section of our example skill'
 
     return handlerInput.responseBuilder
       .speak(speechText)
