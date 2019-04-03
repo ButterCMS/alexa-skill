@@ -1,0 +1,10 @@
+{
+  "name": "buttercms-alexa-skill",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk-core": "^2.0.0",
+    "ask-sdk-model": "^1.0.0",
+    "buttercms": "^1.1.4"
+  }
+}
